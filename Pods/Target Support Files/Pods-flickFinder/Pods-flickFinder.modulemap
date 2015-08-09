@@ -1,0 +1,6 @@
+framework module Pods_flickFinder {
+  umbrella header "Pods-flickFinder-umbrella.h"
+
+  export *
+  module * { export * }
+}

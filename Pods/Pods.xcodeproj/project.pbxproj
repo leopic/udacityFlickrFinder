@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1953F24BDF4524F485553FB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0CF4DF6D9AC82769865CE4 /* Foundation.framework */; };
+		1F9C82ADE07B368F66BC11F8 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = E5579CE5D6D9FD86846AC7D1 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FD75667AFB28FACFAE9A36B /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DB743820693B70EA1F0115 /* Download.swift */; };
+		24D353B28F553FD88B1386FD /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C6294EB4A32DE67691BAE5 /* Request.swift */; };
+		2979468F64C2EA18A4699726 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F899AA3439928A86B14FF3 /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2EE022798D987869F80424CB /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FE52CF484F650FDBDBB83F /* ServerTrustPolicy.swift */; };
+		3DBFD07F5CAB9B0C4B86D5E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0CF4DF6D9AC82769865CE4 /* Foundation.framework */; };
+		43CB8D09AB73858BD7F7D2F4 /* Pods-flickFinder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C84A1D9D13BC89A39F89AD22 /* Pods-flickFinder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A1883D5EF6025B0CAECB641 /* Pods-flickFinder-MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6BDE6C047E11BDD29FFB69 /* Pods-flickFinder-MBProgressHUD-dummy.m */; };
+		4B87E33E047612769A72D871 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576CCCF60CC28C29B0A9054B /* Validation.swift */; };
+		50D30D7319AA10FC9EBD8147 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6F0DA6D1C7CF894CC327DC /* ParameterEncoding.swift */; };
+		52AD84A5041142724A78D1C5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430B4507C9EC5B26C153332B /* Alamofire.swift */; };
+		5CE51D7F30746B926898AACA /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06F54ED12F6A53F707FC37F /* MultipartFormData.swift */; };
+		7848D80C63AF981D0390D356 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0CF4DF6D9AC82769865CE4 /* Foundation.framework */; };
+		7C1B899911D4FDFBFA34BEA6 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD197193BC94480D3EDE444D /* ResponseSerialization.swift */; };
+		82DDA1AF574E80CF0D984A0F /* Pods-flickFinder-Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BC08A01F246BAC643F530AE /* Pods-flickFinder-Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9259DC06F866365B31B2C11B /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FDE778316581AC1E948BEC /* Upload.swift */; };
+		9D59E54CB74ACA4F9B7F6D8C /* Pods-flickFinder-Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B91988562A8B6B8573BEE0A2 /* Pods-flickFinder-Alamofire-dummy.m */; };
+		9D8298A4FB93F0F43A023D5F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D810E5BA606556D0632305 /* CoreGraphics.framework */; };
+		AA56228C3A6667EF885CAC3D /* Pods-flickFinder-MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC76FE966D913DE90F300D26 /* Pods-flickFinder-MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB2829ECBC55CCC966EC543B /* Pods-flickFinder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 184AD12031DB92897435E064 /* Pods-flickFinder-dummy.m */; };
+		D8284F4CBB541B149D53541D /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9658A0FEA21212915D50909 /* Manager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35ECDA1AC0890E3826B9BB0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D90B2A8919F9363AF548DDA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFDC5B022CB3A03F2C204CAF;
+			remoteInfo = "Pods-flickFinder-MBProgressHUD";
+		};
+		C9FE5FDFEE7ECDE3D8804B51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D90B2A8919F9363AF548DDA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FED3AC2685E2351B6248D43;
+			remoteInfo = "Pods-flickFinder-Alamofire";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08847F74A17D7BD1BD8430AC /* Pods-flickFinder-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-flickFinder-resources.sh"; sourceTree = "<group>"; };
+		09DC491AE8F8FF5A80FAB57A /* Pods-flickFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-flickFinder.release.xcconfig"; sourceTree = "<group>"; };
+		184AD12031DB92897435E064 /* Pods-flickFinder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-flickFinder-dummy.m"; sourceTree = "<group>"; };
+		1B78BA2B38E9F7D400DDB5EA /* Pods-flickFinder-MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-flickFinder-MBProgressHUD.xcconfig"; sourceTree = "<group>"; };
+		1E14D0BAC4366D0616972CEA /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		20C5B9BE3EA1FDB82D683DA3 /* Pods-flickFinder-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-flickFinder-acknowledgements.plist"; sourceTree = "<group>"; };
+		2CECDBB7F1FF339E739A8C4D /* Pods-flickFinder-MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-flickFinder-MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		2F6AF22775AADC1EBE5C09C7 /* Pods-flickFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-flickFinder.debug.xcconfig"; sourceTree = "<group>"; };
+		3AC9C30CD7898D847CD91761 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		430B4507C9EC5B26C153332B /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		576CCCF60CC28C29B0A9054B /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		5BC08A01F246BAC643F530AE /* Pods-flickFinder-Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-flickFinder-Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		5C0CF4DF6D9AC82769865CE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5C5F86B894F9177597623680 /* Pods-flickFinder-Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-flickFinder-Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		604A44F00795C39497A11772 /* Pods-flickFinder-Alamofire-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-flickFinder-Alamofire-Private.xcconfig"; sourceTree = "<group>"; };
+		63BEC1524E1ADA5537F069E7 /* Pods-flickFinder-Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-flickFinder-Alamofire.xcconfig"; sourceTree = "<group>"; };
+		67BFFB071F60348EBC8BAB84 /* Pods-flickFinder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-flickFinder.modulemap"; sourceTree = "<group>"; };
+		70F19F3E18EF2E75ECBD7129 /* Pods-flickFinder-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-flickFinder-environment.h"; sourceTree = "<group>"; };
+		71FDE778316581AC1E948BEC /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
+		89FE52CF484F650FDBDBB83F /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		8E37D3A758724561AAF73D77 /* Pods_flickFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flickFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FD42A0121EF6FE75ABB42E2 /* Pods-flickFinder-MBProgressHUD-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-flickFinder-MBProgressHUD-Private.xcconfig"; sourceTree = "<group>"; };
+		93F899AA3439928A86B14FF3 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		98D810E5BA606556D0632305 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		98E6839278808369B95B4328 /* Pods-flickFinder-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-flickFinder-frameworks.sh"; sourceTree = "<group>"; };
+		9D6F0DA6D1C7CF894CC327DC /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		9F1745F464C5301C9480263D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC76FE966D913DE90F300D26 /* Pods-flickFinder-MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-flickFinder-MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		B91988562A8B6B8573BEE0A2 /* Pods-flickFinder-Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-flickFinder-Alamofire-dummy.m"; sourceTree = "<group>"; };
+		BFB2A2B819BEC37FFB0D841B /* Pods-flickFinder-Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-flickFinder-Alamofire.modulemap"; sourceTree = "<group>"; };
+		C84A1D9D13BC89A39F89AD22 /* Pods-flickFinder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-flickFinder-umbrella.h"; sourceTree = "<group>"; };
+		C9DB743820693B70EA1F0115 /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
+		CD197193BC94480D3EDE444D /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		D0C6294EB4A32DE67691BAE5 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		D318AB6A74547BBE4ADED2D6 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D55F02BA09225361010104BE /* Pods-flickFinder-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-flickFinder-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E5579CE5D6D9FD86846AC7D1 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		E739C4C00B0B20B7AAEAA09C /* Pods-flickFinder-MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-flickFinder-MBProgressHUD.modulemap"; sourceTree = "<group>"; };
+		E9658A0FEA21212915D50909 /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
+		ECD481F44BB0EF4E7CEC9895 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F06F54ED12F6A53F707FC37F /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		F6715A17131515324560CE87 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD6BDE6C047E11BDD29FFB69 /* Pods-flickFinder-MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-flickFinder-MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23C1A5CB1750882BB70D0628 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D8298A4FB93F0F43A023D5F /* CoreGraphics.framework in Frameworks */,
+				1953F24BDF4524F485553FB6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4787E6FB377E9945E39EF80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7848D80C63AF981D0390D356 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE968069D35F02D8220B7D1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DBFD07F5CAB9B0C4B86D5E0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0482434213C162E497304E58 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				E5579CE5D6D9FD86846AC7D1 /* MBProgressHUD.h */,
+				93F899AA3439928A86B14FF3 /* MBProgressHUD.m */,
+				AA860C40753721F09A95CF5A /* Support Files */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		0F3598B79C2EB8A9AE37848F = {
+			isa = PBXGroup;
+			children = (
+				1E14D0BAC4366D0616972CEA /* Podfile */,
+				F0E7B28D4A9182137CB589C5 /* Frameworks */,
+				CF38FA3B4A5A9DE7BF421F5D /* Pods */,
+				B96DFEED2E7920EAF27671AB /* Products */,
+				7AF017196FA6FEBAB8E64A20 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		3C16F0DC523FE0149509B4BF /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				430B4507C9EC5B26C153332B /* Alamofire.swift */,
+				C9DB743820693B70EA1F0115 /* Download.swift */,
+				E9658A0FEA21212915D50909 /* Manager.swift */,
+				F06F54ED12F6A53F707FC37F /* MultipartFormData.swift */,
+				9D6F0DA6D1C7CF894CC327DC /* ParameterEncoding.swift */,
+				D0C6294EB4A32DE67691BAE5 /* Request.swift */,
+				CD197193BC94480D3EDE444D /* ResponseSerialization.swift */,
+				89FE52CF484F650FDBDBB83F /* ServerTrustPolicy.swift */,
+				71FDE778316581AC1E948BEC /* Upload.swift */,
+				576CCCF60CC28C29B0A9054B /* Validation.swift */,
+				C001F269D233AF0684ACA06B /* Support Files */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		73F0D2529937C664142BCED3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				98D810E5BA606556D0632305 /* CoreGraphics.framework */,
+				5C0CF4DF6D9AC82769865CE4 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7AF017196FA6FEBAB8E64A20 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E470DDFA3815E086E64A5696 /* Pods-flickFinder */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AA860C40753721F09A95CF5A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECD481F44BB0EF4E7CEC9895 /* Info.plist */,
+				E739C4C00B0B20B7AAEAA09C /* Pods-flickFinder-MBProgressHUD.modulemap */,
+				1B78BA2B38E9F7D400DDB5EA /* Pods-flickFinder-MBProgressHUD.xcconfig */,
+				8FD42A0121EF6FE75ABB42E2 /* Pods-flickFinder-MBProgressHUD-Private.xcconfig */,
+				FD6BDE6C047E11BDD29FFB69 /* Pods-flickFinder-MBProgressHUD-dummy.m */,
+				2CECDBB7F1FF339E739A8C4D /* Pods-flickFinder-MBProgressHUD-prefix.pch */,
+				AC76FE966D913DE90F300D26 /* Pods-flickFinder-MBProgressHUD-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-flickFinder-MBProgressHUD";
+			sourceTree = "<group>";
+		};
+		B96DFEED2E7920EAF27671AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F1745F464C5301C9480263D /* Alamofire.framework */,
+				D318AB6A74547BBE4ADED2D6 /* MBProgressHUD.framework */,
+				8E37D3A758724561AAF73D77 /* Pods_flickFinder.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C001F269D233AF0684ACA06B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3AC9C30CD7898D847CD91761 /* Info.plist */,
+				BFB2A2B819BEC37FFB0D841B /* Pods-flickFinder-Alamofire.modulemap */,
+				63BEC1524E1ADA5537F069E7 /* Pods-flickFinder-Alamofire.xcconfig */,
+				604A44F00795C39497A11772 /* Pods-flickFinder-Alamofire-Private.xcconfig */,
+				B91988562A8B6B8573BEE0A2 /* Pods-flickFinder-Alamofire-dummy.m */,
+				5C5F86B894F9177597623680 /* Pods-flickFinder-Alamofire-prefix.pch */,
+				5BC08A01F246BAC643F530AE /* Pods-flickFinder-Alamofire-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-flickFinder-Alamofire";
+			sourceTree = "<group>";
+		};
+		CF38FA3B4A5A9DE7BF421F5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C16F0DC523FE0149509B4BF /* Alamofire */,
+				0482434213C162E497304E58 /* MBProgressHUD */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E470DDFA3815E086E64A5696 /* Pods-flickFinder */ = {
+			isa = PBXGroup;
+			children = (
+				F6715A17131515324560CE87 /* Info.plist */,
+				67BFFB071F60348EBC8BAB84 /* Pods-flickFinder.modulemap */,
+				D55F02BA09225361010104BE /* Pods-flickFinder-acknowledgements.markdown */,
+				20C5B9BE3EA1FDB82D683DA3 /* Pods-flickFinder-acknowledgements.plist */,
+				184AD12031DB92897435E064 /* Pods-flickFinder-dummy.m */,
+				70F19F3E18EF2E75ECBD7129 /* Pods-flickFinder-environment.h */,
+				98E6839278808369B95B4328 /* Pods-flickFinder-frameworks.sh */,
+				08847F74A17D7BD1BD8430AC /* Pods-flickFinder-resources.sh */,
+				C84A1D9D13BC89A39F89AD22 /* Pods-flickFinder-umbrella.h */,
+				2F6AF22775AADC1EBE5C09C7 /* Pods-flickFinder.debug.xcconfig */,
+				09DC491AE8F8FF5A80FAB57A /* Pods-flickFinder.release.xcconfig */,
+			);
+			name = "Pods-flickFinder";
+			path = "Target Support Files/Pods-flickFinder";
+			sourceTree = "<group>";
+		};
+		F0E7B28D4A9182137CB589C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73F0D2529937C664142BCED3 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4C8D1CFBCD3F28705697A606 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82DDA1AF574E80CF0D984A0F /* Pods-flickFinder-Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D6E2E4FF20F5198D1D045F2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43CB8D09AB73858BD7F7D2F4 /* Pods-flickFinder-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A029A114B12BC6C97838668B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9C82ADE07B368F66BC11F8 /* MBProgressHUD.h in Headers */,
+				AA56228C3A6667EF885CAC3D /* Pods-flickFinder-MBProgressHUD-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5FED3AC2685E2351B6248D43 /* Pods-flickFinder-Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBBB74E24A89B72BFA03F7BD /* Build configuration list for PBXNativeTarget "Pods-flickFinder-Alamofire" */;
+			buildPhases = (
+				852B91CF96073CF940FA8938 /* Sources */,
+				DE968069D35F02D8220B7D1B /* Frameworks */,
+				4C8D1CFBCD3F28705697A606 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-flickFinder-Alamofire";
+			productName = "Pods-flickFinder-Alamofire";
+			productReference = 9F1745F464C5301C9480263D /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		762BE0FD3D22CF5E19F16384 /* Pods-flickFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E68D4F25FC59BFB19EB3578 /* Build configuration list for PBXNativeTarget "Pods-flickFinder" */;
+			buildPhases = (
+				0E08301A4D9FF7B6A1A2E91D /* Sources */,
+				D4787E6FB377E9945E39EF80 /* Frameworks */,
+				7D6E2E4FF20F5198D1D045F2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AC48680F6A127D74EA2DA5E /* PBXTargetDependency */,
+				AD0AB81595AE9CAFB7035071 /* PBXTargetDependency */,
+			);
+			name = "Pods-flickFinder";
+			productName = "Pods-flickFinder";
+			productReference = 8E37D3A758724561AAF73D77 /* Pods_flickFinder.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BFDC5B022CB3A03F2C204CAF /* Pods-flickFinder-MBProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E73301B83D6284070236C351 /* Build configuration list for PBXNativeTarget "Pods-flickFinder-MBProgressHUD" */;
+			buildPhases = (
+				2F7CCED3B4E20EE9791E11C7 /* Sources */,
+				23C1A5CB1750882BB70D0628 /* Frameworks */,
+				A029A114B12BC6C97838668B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-flickFinder-MBProgressHUD";
+			productName = "Pods-flickFinder-MBProgressHUD";
+			productReference = D318AB6A74547BBE4ADED2D6 /* MBProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D90B2A8919F9363AF548DDA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 89B1F3A20AD03A277A7305D9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0F3598B79C2EB8A9AE37848F;
+			productRefGroup = B96DFEED2E7920EAF27671AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				762BE0FD3D22CF5E19F16384 /* Pods-flickFinder */,
+				5FED3AC2685E2351B6248D43 /* Pods-flickFinder-Alamofire */,
+				BFDC5B022CB3A03F2C204CAF /* Pods-flickFinder-MBProgressHUD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E08301A4D9FF7B6A1A2E91D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB2829ECBC55CCC966EC543B /* Pods-flickFinder-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F7CCED3B4E20EE9791E11C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2979468F64C2EA18A4699726 /* MBProgressHUD.m in Sources */,
+				4A1883D5EF6025B0CAECB641 /* Pods-flickFinder-MBProgressHUD-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		852B91CF96073CF940FA8938 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52AD84A5041142724A78D1C5 /* Alamofire.swift in Sources */,
+				1FD75667AFB28FACFAE9A36B /* Download.swift in Sources */,
+				D8284F4CBB541B149D53541D /* Manager.swift in Sources */,
+				5CE51D7F30746B926898AACA /* MultipartFormData.swift in Sources */,
+				50D30D7319AA10FC9EBD8147 /* ParameterEncoding.swift in Sources */,
+				9D59E54CB74ACA4F9B7F6D8C /* Pods-flickFinder-Alamofire-dummy.m in Sources */,
+				24D353B28F553FD88B1386FD /* Request.swift in Sources */,
+				7C1B899911D4FDFBFA34BEA6 /* ResponseSerialization.swift in Sources */,
+				2EE022798D987869F80424CB /* ServerTrustPolicy.swift in Sources */,
+				9259DC06F866365B31B2C11B /* Upload.swift in Sources */,
+				4B87E33E047612769A72D871 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2AC48680F6A127D74EA2DA5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-flickFinder-Alamofire";
+			target = 5FED3AC2685E2351B6248D43 /* Pods-flickFinder-Alamofire */;
+			targetProxy = C9FE5FDFEE7ECDE3D8804B51 /* PBXContainerItemProxy */;
+		};
+		AD0AB81595AE9CAFB7035071 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-flickFinder-MBProgressHUD";
+			target = BFDC5B022CB3A03F2C204CAF /* Pods-flickFinder-MBProgressHUD */;
+			targetProxy = 35ECDA1AC0890E3826B9BB0F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0A691330E4CECC8714237340 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 604A44F00795C39497A11772 /* Pods-flickFinder-Alamofire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-flickFinder-Alamofire/Pods-flickFinder-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-flickFinder-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-flickFinder-Alamofire/Pods-flickFinder-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		385C82F6796903D290A2C587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09DC491AE8F8FF5A80FAB57A /* Pods-flickFinder.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-flickFinder/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-flickFinder/Pods-flickFinder.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_flickFinder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7BE5636B33B66C354EE1AD45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 604A44F00795C39497A11772 /* Pods-flickFinder-Alamofire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-flickFinder-Alamofire/Pods-flickFinder-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-flickFinder-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-flickFinder-Alamofire/Pods-flickFinder-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8819283CFE7E4F1C7DB90CCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FD42A0121EF6FE75ABB42E2 /* Pods-flickFinder-MBProgressHUD-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-flickFinder-MBProgressHUD/Pods-flickFinder-MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-flickFinder-MBProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-flickFinder-MBProgressHUD/Pods-flickFinder-MBProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9F84F0DCC4DFD63254A4849D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A70AD117A6F8E5EC56FE92BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FD42A0121EF6FE75ABB42E2 /* Pods-flickFinder-MBProgressHUD-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-flickFinder-MBProgressHUD/Pods-flickFinder-MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-flickFinder-MBProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-flickFinder-MBProgressHUD/Pods-flickFinder-MBProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E86A96B97929DC566C6D0735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAAC57081D09DFA1639F982F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F6AF22775AADC1EBE5C09C7 /* Pods-flickFinder.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-flickFinder/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-flickFinder/Pods-flickFinder.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_flickFinder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E68D4F25FC59BFB19EB3578 /* Build configuration list for PBXNativeTarget "Pods-flickFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAAC57081D09DFA1639F982F /* Debug */,
+				385C82F6796903D290A2C587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89B1F3A20AD03A277A7305D9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F84F0DCC4DFD63254A4849D /* Debug */,
+				E86A96B97929DC566C6D0735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBBB74E24A89B72BFA03F7BD /* Build configuration list for PBXNativeTarget "Pods-flickFinder-Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BE5636B33B66C354EE1AD45 /* Debug */,
+				0A691330E4CECC8714237340 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E73301B83D6284070236C351 /* Build configuration list for PBXNativeTarget "Pods-flickFinder-MBProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70AD117A6F8E5EC56FE92BF /* Debug */,
+				8819283CFE7E4F1C7DB90CCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D90B2A8919F9363AF548DDA2 /* Project object */;
+}
