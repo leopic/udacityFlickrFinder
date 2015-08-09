@@ -87,7 +87,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
-        tapOnSearchBtn()
+        if isValidSearch().0 {
+            tapOnSearchBtn()
+        }
         return true
     }
     
@@ -97,13 +99,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let phrase = txtSearchByPhrase.text
         let noSearchTerm = lat.isEmpty && lon.isEmpty && phrase.isEmpty
         
-        if isValidSearch() {
+        self.view.endEditing(true)
+        
+        if isValidSearch().0 {
             var params:[String:AnyObject] = [
                 "api_key": APIKey,
                 "format": "json",
                 "method": "flickr.photos.search",
                 "nojsoncallback": 1,
-                "per_page": 10
+                "per_page": 500
             ]
             
             if !phrase.isEmpty {
@@ -117,14 +121,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
             
             searchImage(baseURL, params: params)
         } else {
-            println("Can not go on without something to search.")
+            lblCaption.text = isValidSearch().1
         }
     }
     
     func searchImage(baseURL:String, params:[String:AnyObject]) {
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
         MBProgressHUD.showHUDAddedTo(self.view, animated: true)
-        
         UIView.animateWithDuration(0.5, animations: { () -> Void in
             self.imgMain.alpha = 0.0
             self.lblCaption.alpha = 0.0
@@ -134,22 +137,31 @@ class ViewController: UIViewController, UITextFieldDelegate {
             if error == nil {
                 if let data = JSON as? NSDictionary {
                     if let photos = data.valueForKey("photos")?.valueForKey("photo") as? [NSDictionary] {
-                        let photo = photos.sample
-                        let farmId = photo.valueForKey("farm") as! NSNumber
-                        let serverId = photo.valueForKey("server") as! String
-                        let photoId = photo.valueForKey("id") as! String
-                        let secret = photo.valueForKey("secret") as! String
-                        let title = photo.valueForKey("title") as! String
-                        let size = "z"
-                        let photoURL = "https://farm\(farmId).staticflickr.com/\(serverId)/\(photoId)_\(secret)_\(size).jpg"
-                        
-                        Alamofire.request(.GET, photoURL).response { (_, _, imgData, error) in
-                            self.imgMain.image = UIImage(data: imgData!)
+                        if photos.count > 0 {
+                            let photo = photos.sample
+                            let farmId = photo.valueForKey("farm") as! NSNumber
+                            let serverId = photo.valueForKey("server") as! String
+                            let photoId = photo.valueForKey("id") as! String
+                            let secret = photo.valueForKey("secret") as! String
+                            let title = photo.valueForKey("title") as! String
+                            let size = "z"
+                            let photoURL = "https://farm\(farmId).staticflickr.com/\(serverId)/\(photoId)_\(secret)_\(size).jpg"
                             
+                            Alamofire.request(.GET, photoURL).response { (_, _, imgData, error) in
+                                self.imgMain.image = UIImage(data: imgData!)
+                                self.lblCaption.text = title
+                                
+                                UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+                                MBProgressHUD.hideHUDForView(self.view, animated: true)
+                                UIView.animateWithDuration(0.5, animations: { () -> Void in
+                                    self.imgMain.alpha = 1.0
+                                    self.lblCaption.alpha = 1.0
+                                })
+                            }
+                        } else {
+                            self.lblCaption.text = "No photos matched your criteria"
                             UIApplication.sharedApplication().networkActivityIndicatorVisible = false
                             MBProgressHUD.hideHUDForView(self.view, animated: true)
-                            self.lblCaption.text = title
-                            
                             UIView.animateWithDuration(0.5, animations: { () -> Void in
                                 self.imgMain.alpha = 1.0
                                 self.lblCaption.alpha = 1.0
@@ -161,21 +173,29 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    func isValidSearch() -> Bool {
+    func isValidSearch() -> (Bool, String) {
         let lat = txtSearchByLat.text
         let lon = txtSearchByLong.text
         let phrase = txtSearchByPhrase.text
         let noSearchTerm = lat.isEmpty && lon.isEmpty && phrase.isEmpty
-
+        
         if !phrase.isEmpty {
-            return true
+            return (true, "Success")
         }
         
+        // Latitude must be provided as a number between -90 and 90
+        // Longitude must be provided as a number between -180 and 180
         if !lon.isEmpty && !lat.isEmpty {
-            return true
+            let latVal = lat.toInt()
+            let lonVal = lat.toInt()
+            if latVal > -91 && latVal < 91 && lonVal > -181 && lonVal < 181 {
+                return (true, "Success")
+            } else {
+                return (false, "Invalid latitude or longitud")
+            }
+        } else {
+            return (false, "No search term was given")
         }
-        
-        return noSearchTerm
     }
     
 }
